@@ -40,7 +40,7 @@ class ReadableWiki(pathToWikipediaDump: String, pathToOutFile: String){
           writer.write(line)
           counter = counter + 1
 
-          if(counter % 1000 == 0)
+          if(counter % 200 == 0)
             println("Document n." ++ counter)
         }
       })
