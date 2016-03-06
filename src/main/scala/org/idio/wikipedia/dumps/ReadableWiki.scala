@@ -39,6 +39,9 @@ class ReadableWiki(pathToWikipediaDump: String, pathToOutFile: String){
           val line = List[String](title, articleText).mkString("\t") + "\n"
           writer.write(line)
           counter = counter + 1
+
+          if(counter % 1000 == 0)
+            println("Document n." ++ counter)
         }
       })
       parser.parse()
