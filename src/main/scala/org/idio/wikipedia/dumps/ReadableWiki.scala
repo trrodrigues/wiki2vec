@@ -41,7 +41,7 @@ class ReadableWiki(pathToWikipediaDump: String, pathToOutFile: String){
           counter = counter + 1
 
           if(counter % 200 == 0)
-            println("Document n." ++ counter)
+            println("Document n." + counter)
         }
       })
       parser.parse()
